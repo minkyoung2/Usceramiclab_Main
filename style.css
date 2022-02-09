@@ -1,13 +1,16 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 *{margin: 0; padding: 0;}
 ul{list-style: none;}
-a{text-decoration: none; color: black;}
+a{text-decoration: none; color: #171616;}
 body{
-  @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
+  font-family: 'Pretendard-Regular';
+  font-size: 14px;
+  color: #171616;
 }
 /*header*/
 header{
@@ -22,17 +25,18 @@ header{
   top: 60px;
   left: 55%;
 }
-.menu li{
+.menu> li{
   float: left;
+  position: relative;
 }
-.menu li a{
+.menu> li> a{
   padding-left: 20px;
   font-family: 'IM Fell DW Pica';
   font-size: 22px;
   color: #4e5150;
   font-weight: bold;
 }
-.menu li a:hover{
+.menu> li> a:hover{
   color: #cfcfd3;
 }
 .icon{
@@ -46,6 +50,30 @@ header{
 .icon li a{
   padding-left: 8px;
 }
+.icon li a:hover{
+  opacity: 0.4;
+}
+/*submenu*/
+.sub_menu a{
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'IM Fell English SC';
+  color: #4e5150;
+  font-size: 18px;
+}
+.sub_menu a:hover{
+  color: #cfcfd3;
+}
+.sub_menu{
+  display: none;
+  position: absolute;
+  width: 120%;
+}
+.menu li:hover .sub_menu{
+  display: block;
+}
+/*submenu*/
 /*header*/
 /*banner*/
 .swiper-slide{
@@ -117,53 +145,58 @@ header{
   color: #4e5150;
 }
 #new_collection img{
-  overflow: hidden;
+  transition: all 1s;
 }
 .new1{
   position: absolute;
   top: 12%;
   left: 25%;
+  width: 378px;
+  height: 607px;
+  border-radius: 142px;
 }
 .new2{
   position: absolute;
   top: 17%;
   left: 50%;
+  width: 449px;
+  height: 675px;
+  border-radius: 224.5px;
 }
 .new3{
   position: absolute;
   top: 35%;
   left: 0%;
+  width: 450px;
+  height: 696px;
+  border-radius: 100%;
 }
 .new4{
   position: absolute;
   top: 62%;
   left: 28%;
+  width: 387px;
+  height: 501px;
+  border-radius: 193.5px;
 }
 .new5{
   position: absolute;
   top: 52%;
   left: 57%;
+  width: 614px;
+  height: 836px;
+  border-radius: 281.5px;
 }
-.new1:hover{
+#new_collection div:hover img{
   transform: scale(1.1,1.1);
 }
-.new2:hover{
-  transform: scale(1.1,1.1);
-}
-.new3:hover{
-  transform: scale(1.1,1.1);
-}
-.new4:hover{
-  transform: scale(1.1,1.1);
-}
-.new5 img:hover .black{
-  opacity: 1;
-  transition: all 1s;
+#new_collection div{
+  overflow: hidden;
 }
 /*New Collection*/
 /*About us banner*/
 #aboutus_banner{
-  width: 1320px;
+  width: 1364px;
   margin: auto;
   margin-top: 300px;
   position: relative;
@@ -173,9 +206,9 @@ header{
 /*About us banner*/
 /*Beige bg img*/
 .bg_img{
-  margin-top: -800px;
-  z-index: -1;
-  position: relative;
+  margin-top: -1900px;
+  overflow: hidden;
+  width: 100%;
 }
 /*Beige bg img*/
 /*Order made*/
@@ -183,17 +216,99 @@ header{
   width: 1320px;
   margin: auto;
   z-index: 1;
+  position: relative;
+  height: 1200px;
 }
 #ordermade h1{
   font-family: 'IM Fell DW Pica', serif;
   text-align: center;
   color: #4e5150;
 }
+.left_bg{
+  border: 3px #dad3cc solid;
+  width: 306.71px;
+  height: 464.03px;
+  border-radius: 153.36px 153.36px 0 0;
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  z-index: -1;
+}
+.left{
+  z-index: 1;
+  position: absolute;
+  top: 23%;
+  left: 2%;
+}
+.left_text{
+  background-color: #fffffd;
+  position: absolute;
+  left: 25%;
+  top: 55%;
+  z-index: 2;
+  width: 560px;
+  height: 160px;
+  font-size: 16px;
+  padding: 20px;
+  font-family: 'Pretendard-Regular';
+  color: #4e5150;
+  line-height: 28px;
+}
+.left_text p{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.bold, .text_bg, .s1{
+  font-weight: bold;
+}
+.text_bg{
+  background-color: #d9d3cc;
+}
+.s1{
+  text-decoration: underline;
+}
+.right_bg{
+  border: 3px #dad3cc solid;
+  width: 214.29px;
+  height: 324.57px;
+  border-radius: 107.15px 107.15px 0 0;
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  z-index: -1;
+}
+.right{
+  z-index: 1;
+  position: absolute;
+  top: 7%;
+  right: 10%;
+}
+.right_text{
+  background-color: #fffffd;
+  position: absolute;
+  right: 20%;
+  top: 30%;
+  z-index: 2;
+  width: 380px;
+  height: 100px;
+  font-size: 16px;
+  padding: 20px;
+  padding-top: 20px;
+  font-family: 'Pretendard-Regular';
+  color: #4e5150;
+  line-height: 28px;
+}
+.right_text p{
+  padding-top: 5px;
+  padding-left: 10px;
+}
 /*Order made*/
 /*Instagram*/
 #instagram{
   width: 1320px;
   margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 #instagram h1{
   font-family: 'IM Fell DW Pica', serif;
@@ -210,6 +325,12 @@ header{
 }
 .i1{
   padding-right: 20px;
+}
+#instagram img{
+  transition: all 0.7s;
+}
+#instagram img:hover{
+  transform: translateY(-30px);
 }
 /*Instagram*/
 /*Top botton*/
@@ -253,7 +374,8 @@ header{
 .f3{
   font-family: 'Pretendard-Regular';
   color: #fffffd;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 17px;
 }
 .footer_center{
   position: absolute;
@@ -276,6 +398,9 @@ header{
 .r1 li a{
   font-family: 'Pretendard-Regular';
   color: #fffffd;
+}
+.r1 li a:hover{
+  opacity: 0.5;
 }
 .footer_right_icon{
   position: absolute;
