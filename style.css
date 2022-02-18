@@ -1,0 +1,455 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #171616;}
+body{
+  font-family: 'Pretendard-Regular';
+  font-size: 14px;
+  color: #171616;
+}
+/*header*/
+header{
+  width: 1320px; 
+  margin: auto;
+  position: relative;
+  padding-bottom: 60px;
+  margin-top: 10px;
+}
+.menu{
+  position: absolute;
+  top: 60px;
+  left: 55%;
+}
+.menu> li{
+  float: left;
+  position: relative;
+}
+.menu> li> a{
+  padding-left: 20px;
+  font-family: 'IM Fell DW Pica';
+  font-size: 22px;
+  color: #4e5150;
+  font-weight: bold;
+}
+.menu> li> a:hover{
+  color: #cfcfd3;
+}
+.icon{
+  position: absolute;
+  top: 60px;
+  left: 94%;
+}
+.icon li{
+  float: left;
+}
+.icon li a{
+  padding-left: 8px;
+}
+.icon li a:hover{
+  opacity: 0.4;
+}
+/*submenu*/
+.sub_menu a{
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'IM Fell English SC';
+  color: #4e5150;
+  font-size: 18px;
+}
+.sub_menu a:hover{
+  color: #cfcfd3;
+}
+.sub_menu{
+  display: none;
+  position: absolute;
+  width: 120%;
+}
+.menu li:hover .sub_menu{
+  display: block;
+}
+/*submenu*/
+/*header*/
+/*banner*/
+.swiper-slide{
+  position: relative;
+}
+.circle{
+  position: absolute;
+  top: 380px;
+  left: 520px;
+}
+.banner1{
+  font-family: 'Pretendard-Regular';
+  position: absolute;
+  right: 27%;
+  bottom: 9%;
+  color: #706e69;
+  font-size: 28px;
+}
+.banner2{
+  font-family: 'Pretendard-Regular';
+  position: absolute;
+  right: 45%;
+  bottom: 18.5%;
+  color: #706e69;
+  font-size: 28px;
+}
+.banner3{
+  font-family: 'Pretendard-Regular';
+  position: absolute;
+  left: 37%;
+  bottom: 12%;
+  color: #706e69;
+  font-size: 28px;
+}
+.banner4{
+  font-family: 'Pretendard-Regular';
+  position: absolute;
+  right: 37%;
+  bottom: 11%;
+  color: #706e69;
+  font-size: 28px;
+}
+.circle{
+  z-index: 3;
+  margin-left: 1200px;
+  margin-top: 270px;
+}
+.circle img{
+  width: 80%;
+}
+@keyframes ani1{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+.circle img{animation: ani1 6s infinite linear;}
+/*banner*/
+/*New Collection*/
+#new_collection{
+  width: 1320px;
+  margin: auto;
+  position: relative;
+  height: 1500px;
+}
+#new_collection h1{
+  font-family: 'IM Fell DW Pica', serif;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 35px;
+  color: #4e5150;
+}
+#new_collection img{
+  transition: all 1s;
+}
+.new1{
+  position: absolute;
+  top: 12%;
+  left: 25%;
+  width: 378px;
+  height: 607px;
+  border-radius: 142px;
+}
+.new2{
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  width: 449px;
+  height: 675px;
+  border-radius: 224.5px;
+}
+.new3{
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  width: 450px;
+  height: 696px;
+  border-radius: 100%;
+}
+.new4{
+  position: absolute;
+  top: 62%;
+  left: 28%;
+  width: 387px;
+  height: 501px;
+  border-radius: 193.5px;
+}
+.new5{
+  position: absolute;
+  top: 52%;
+  left: 57%;
+  width: 614px;
+  height: 836px;
+  border-radius: 281.5px;
+}
+#new_collection div:hover img{
+  transform: scale(1.1,1.1);
+}
+#new_collection div{
+  overflow: hidden;
+}
+/*New Collection*/
+/*About us banner*/
+#aboutus_banner{
+  width: 1364px;
+  margin: auto;
+  margin-top: 300px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 180px;
+}
+/*About us banner*/
+/*Beige bg img*/
+.bg_img{
+  margin-top: -1900px;
+  overflow: hidden;
+  width: 100%;
+}
+/*Beige bg img*/
+/*Order made*/
+#ordermade{
+  width: 1320px;
+  margin: auto;
+  z-index: 1;
+  position: relative;
+  height: 1200px;
+}
+#ordermade h1{
+  font-family: 'IM Fell DW Pica', serif;
+  text-align: center;
+  color: #4e5150;
+  font-size: 35px;
+}
+.left_bg{
+  border: 3px #dad3cc solid;
+  width: 306.71px;
+  height: 464.03px;
+  border-radius: 153.36px 153.36px 0 0;
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  z-index: -1;
+}
+.left{
+  z-index: 1;
+  position: absolute;
+  top: 23%;
+  left: 2%;
+}
+.left_text{
+  background-color: #fffffd;
+  position: absolute;
+  left: 25%;
+  top: 55%;
+  z-index: 2;
+  width: 560px;
+  height: 160px;
+  font-size: 16px;
+  padding: 20px;
+  font-family: 'Pretendard-Regular';
+  color: #4e5150;
+  line-height: 28px;
+}
+.left_text p{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.bold, .text_bg, .s1{
+  font-weight: bold;
+}
+.text_bg{
+  background-color: #d9d3cc;
+}
+.s1{
+  text-decoration: underline;
+}
+.right_bg{
+  border: 3px #dad3cc solid;
+  width: 214.29px;
+  height: 324.57px;
+  border-radius: 107.15px 107.15px 0 0;
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  z-index: -1;
+}
+.right{
+  z-index: 1;
+  position: absolute;
+  top: 7%;
+  right: 10%;
+}
+.right_text{
+  background-color: #fffffd;
+  position: absolute;
+  right: 20%;
+  top: 30%;
+  z-index: 2;
+  width: 380px;
+  height: 100px;
+  font-size: 16px;
+  padding: 20px;
+  padding-top: 20px;
+  font-family: 'Pretendard-Regular';
+  color: #4e5150;
+  line-height: 28px;
+}
+.right_text p{
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.ordermade_btn{
+  background: url('images/ordermade_btn.png') no-repeat;
+  width: 192px;
+  height: 47px;
+  position: absolute;
+  right: 5%;
+  top: 60%;
+}
+.ordermade_btn a{
+  color: #4e5150;
+  font-size: 23px;
+  position: absolute;
+  right: 8%;
+  top: 20%;
+}
+.ordermade_btn a:hover{
+  color: #fffffd;
+}
+/*Order made*/
+/*Instagram*/
+#instagram{
+  width: 1320px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#instagram h1{
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 50px;
+  color: #4e5150;
+}
+.insta{
+  float: left;
+}
+.insta li{
+  float: left;
+}
+.i1{
+  padding-right: 20px;
+}
+#instagram img{
+  transition: all 0.7s;
+}
+#instagram img:hover{
+  transform: translateY(-30px);
+}
+/*Instagram*/
+/*Top botton*/
+.top{
+  position:fixed; 
+  bottom:50px; 
+  right:50px; 
+  display:none;
+  z-index: 3;
+}
+.top img{
+  width: 70%;
+}
+/*Top botton*/
+/*footr*/
+#footer{
+  background: url('footer/footerbg.jpg')
+  no-repeat;
+  height: 286px;
+  margin-top: 500px;
+  position: relative;
+  bottom: 0;
+}
+.footer_inner{
+  width: 1320px;
+  margin: auto;
+  padding-top: 90px;
+  position: relative;
+}
+.f1, .f2{
+  font-family: 'IM Fell English SC', serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #fffffd;
+  margin-top: -20px;
+}
+.f2{
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+.f3{
+  font-family: 'Pretendard-Regular';
+  color: #fffffd;
+  font-size: 12px;
+  line-height: 17px;
+}
+.footer_center{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -245px;
+}
+.footer_right{
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: 300px;
+}
+.r1{
+  float: right;
+}
+.r1 li{
+  float: left;
+}
+.r1 li a{
+  font-family: 'Pretendard-Regular';
+  color: #fffffd;
+}
+.r1 li a:hover{
+  opacity: 0.5;
+}
+.footer_right_icon{
+  position: absolute;
+  right: 0;
+  top: 90%;
+}
+.footer_icon{
+  float: right;
+}
+.footer_icon li{
+  float: left;
+  padding-left: 10px;
+}
+.r1 li a{
+  font-family: 'Pretendard-Regular';
+}
+.facebook:hover{
+  background: url(footer/facebook_hover.png) no-repeat
+  100% 0%;
+}
+.insta:hover{
+  background: url(footer/insta_hover.png) no-repeat
+  100% 0%;
+}
+.twitter:hover{
+  background: url(footer/twitter_hover.png) no-repeat
+  100% 0%;
+}
+.youtube:hover{
+  background: url(footer/youtube_hover.png) no-repeat
+  100% 0%;
+}
+/*footr*/
